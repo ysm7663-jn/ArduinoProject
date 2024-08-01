@@ -1,4 +1,4 @@
-// vss : LCD GND
+// vss : LCD GND 
 // vdd : LCD 5V
 // vo : 글자 대비값
 // RS : 레지스터
