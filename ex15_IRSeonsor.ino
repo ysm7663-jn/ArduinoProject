@@ -1,4 +1,4 @@
-#include <IRremote.h>   // IRremote.h 라이브러리 활용
+#include <IRremote.h>   // IRremote.h 라이브러리 활용 
 #include <Servo.h>      // Servo.h 라이브러리 활용
 
 // LCD 선언
