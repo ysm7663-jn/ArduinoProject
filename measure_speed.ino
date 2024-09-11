@@ -26,11 +26,12 @@ void detectSticker() {
     
     // 속도 계산 (거리 / 시간, 시간은 초 단위로 변환해야 함)
     float timeInSeconds = timeInterval / 1000000.0;
-    float speed = stickerDistance / timeInSeconds;  // 속도 단위: m/s
+    float speed_mps = stickerDistance / timeInSeconds;  // 속도 단위: m/s
+    float speed_mpm = speed_mps * 60.0; // m/min으로 변환
     
     Serial.print("Speed: ");
-    Serial.print(speed);
-    Serial.println(" m/s");
+    Serial.print(speed_mpm);
+    Serial.println(" m/min");
     
     // 다음 측정을 위해 타이머를 다시 설정
     startTime = endTime;  // 두 번째 스티커를 첫 번째로 간주하고 시작
